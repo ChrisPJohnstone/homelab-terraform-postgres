@@ -1,0 +1,3 @@
+host="1.1.1.1"
+admin_username="postgres"
+admin_password="password"
