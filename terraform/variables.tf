@@ -22,10 +22,12 @@ variable "admin_password" {
   description = "Username to connect to postgres with"
   type        = string
   nullable    = false
+  sensitive   = true
 }
 
 variable "miniflux_password" {
   description = "Password to create for miniflux user"
   type        = string
   nullable    = false
+  sensitive   = true
 }
