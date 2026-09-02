@@ -23,3 +23,9 @@ variable "admin_password" {
   type        = string
   nullable    = false
 }
+
+variable "miniflux_password" {
+  description = "Password to create for miniflux user"
+  type        = string
+  nullable    = false
+}
