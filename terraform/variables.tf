@@ -15,6 +15,7 @@ variable "admin_username" {
   description = "Username to connect to postgres with"
   type        = string
   nullable    = false
+  sensitive   = true
   default     = "postgres"
 }
 
@@ -25,8 +26,16 @@ variable "admin_password" {
   sensitive   = true
 }
 
-variable "miniflux_password" {
-  description = "Password to create for miniflux user"
+variable "terraform_kubernetes_username" {
+  description = "Username to create for terraform kubernetes user"
+  type        = string
+  nullable    = false
+  sensitive   = true
+  default     = "tf_k8s"
+}
+
+variable "terraform_kubernetes_password" {
+  description = "Password to create for terraform kubernetes user"
   type        = string
   nullable    = false
   sensitive   = true
